@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    #region Singleton classManager
     public static GameManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+    #endregion 
+
     [Header("References")]
     public CanvasUI canvasUI;
     public CameraFollow cameraFollow;
@@ -32,30 +39,15 @@ public class GameManager : MonoBehaviour
     public Finish finish;
     [Header("Prefab Settings")]
     public GameObject prefabBullet;
+    #region implement Unity 
     
-    private void Awake()
-    {
-        instance = this;
-    }
     private void Start()
     {
         _InitGame();
     }
-    private void _InitGame()
-    {
-        /* Shop Item Init */
-        canvasUI.InitShopItem();
-        /* Init Scene Pos */
-        InitScenePos();
-    }
-    void ObjectPooling(int childCount,GameObject prefaB, Transform parent)
-    {
-        for(int i=0;i<childCount;i++)
-        {
-            GameObject obj = Instantiate(prefaB, parent);
-            obj.SetActive(false);
-        }
-    }
+    #endregion
+
+    #region _InitGame()
     void InitScenePos()
     {
         /* Scene Pos */
@@ -117,7 +109,7 @@ public class GameManager : MonoBehaviour
         }
         /* EnemyGun Position */
         obj = enemyGunObjects;
-        for(int i=0;i< obj.transform.childCount;i++)
+        for (int i = 0; i < obj.transform.childCount; i++)
         {
             GameObject value = obj.transform.GetChild(i).gameObject;
             value.transform.position = value.GetComponent<Enemy>().scenePos[Scene];
@@ -186,36 +178,60 @@ public class GameManager : MonoBehaviour
                 enemyGunList.Add(enemyGun);
             }
         }
-            /* 1 bullet each Enemy */
-        ObjectPooling(enemyGunList.Count,prefabBullet,bulletObjects.transform);
-        
-        
-        
+        /* 1 bullet each Enemy */
+        ObjectPooling(enemyGunList.Count, prefabBullet, bulletObjects.transform);
+
+
+
         /* Adding Bullet List */
-        for (int i=0;i < bulletObjects.transform.childCount;i++)
+        for (int i = 0; i < bulletObjects.transform.childCount; i++)
         {
             GameObject value = bulletObjects.transform.GetChild(i).gameObject;
             bulletList.Add(value);
         }
-        
-            /* Adding EnemyBullet 1 each */
-            for (int i = 0; i < enemyGunObjects.transform.childCount; i++)
+
+        /* Adding EnemyBullet 1 each */
+        for (int i = 0; i < enemyGunObjects.transform.childCount; i++)
+        {
+            GameObject enemyGun = enemyGunObjects.transform.GetChild(i).gameObject;
+            if (enemyGun.active)
             {
-                GameObject enemyGun = enemyGunObjects.transform.GetChild(i).gameObject;
-                if (enemyGun.active)
-                {
-                    enemyGun.GetComponent<Enemy>().enemyBullet = bulletList[i].gameObject;
-                }
+                enemyGun.GetComponent<Enemy>().enemyBullet = bulletList[i].gameObject;
             }
+        }
         /* End Adding Bullet List */
     }
+    private void _InitGame()
+    {
+        /* Shop Item Init */
+        canvasUI.InitShopItem();
+        /* Init Scene Pos */
+        InitScenePos();
+    }
+    #endregion
+    
+    
     private IEnumerator spawnFinishEffect()
     {
+        #region variable
+        GameObject row = finish.transform.GetChild(1).gameObject;
+        #endregion
+
+        #region action
         finishEffect.SetActive(true);
+
+        finishEffect.transform.parent = row.transform;
+        finishEffect.transform.localPosition = Vector3.zero;
+
+
         yield return new WaitForSeconds(2f);
+
         finishEffect.SetActive(false);
+
         yield return spawnFinishEffect();
+        #endregion
     }
+
     public void _CompleteGame()
     {
         isFinish = true;
@@ -261,5 +277,13 @@ public class GameManager : MonoBehaviour
                 if (_time > 1f) Time.timeScale = 1f;
                 yield return null;
             }
+    }
+    void ObjectPooling(int childCount, GameObject prefaB, Transform parent)
+    {
+        for (int i = 0; i < childCount; i++)
+        {
+            GameObject obj = Instantiate(prefaB, parent);
+            obj.SetActive(false);
+        }
     }
 }
