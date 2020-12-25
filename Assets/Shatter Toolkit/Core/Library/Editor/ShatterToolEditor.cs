@@ -1,0 +1,82 @@
+/*
+http://www.cgsoso.com/forum-211-1.html
+
+CG搜搜 Unity3d 每日Unity3d插件免费更新 更有VIP资源！
+
+CGSOSO 主打游戏开发，影视设计等CG资源素材。
+
+插件如若商用，请务必官网购买！
+
+daily assets update for try.
+
+U should buy the asset from home store if u use it in your project!
+*/
+
+// Shatter Toolkit
+// Copyright 2015 Gustav Olsson
+using UnityEngine;
+using UnityEditor;
+
+namespace ShatterToolkit
+{
+    [CustomEditor(typeof(ShatterTool))]
+    public class ShatterToolEditor : Editor
+    {
+        protected static System.String generationLimitTooltip =   "Gets or sets the generation limit of this ShatterTool instance. This value restricts how many times a game object may be shattered using ShatterTool.Shatter(). A game object will only be able to shatter if ShatterTool.Generation is less than ShatterTool.GenerationLimit.";
+        protected static System.String cutsTooltip =              "Gets or sets the number of times the game object will be cut when ShatterTool.Shatter() occurs.";
+        protected static System.String fillCutTooltip =           "Gets or sets whether the cut region should be triangulated. If true, the connected UvMapper component will control the vertex properties of the filled area. When the ShatterTool is used on double-sided meshes with zero thickness, such as planes, this value should be false.";
+        protected static System.String preSplitMsgTooltip =       "Gets or sets whether a PreSplit(Plane[] planes) message should be sent to the original game object prior to a split occurs. The supplied object will be the array of Planes that will be used to split the game object.";
+        protected static System.String postSplitMsgTooltip =      "Gets or sets whether a PostSplit(GameObject[] newGameObjects) message should be sent to the original game object after a split has occured. The message will be sent before destroying the original game object. The supplied object will be an array of all new GameObjects created during the split.";
+        protected static System.String internalHullTypeTooltip =  "Gets or sets the type of the internal hull used to shatter the mesh. The FastHull implementation is roughly 20-50% faster than the LegacyHull implementation and requires no time to startup. The LegacyHull implementation is more robust in extreme cases and is provided for backwards compatibility. This setting can't be changed during runtime.";
+        
+        public override void OnInspectorGUI()
+        {
+            ShatterTool source = (ShatterTool)target;
+            
+            EditorGUILayout.BeginVertical();
+            
+            // Generation
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Generation", source.Generation.ToString());
+            EditorGUILayout.EndHorizontal();
+            
+            // GenerationLimit
+            EditorGUILayout.BeginHorizontal();
+            source.GenerationLimit = EditorGUILayout.IntSlider(new GUIContent("Generation Limit", generationLimitTooltip), source.GenerationLimit, 1, 30);
+            EditorGUILayout.EndHorizontal();
+            
+            // Cuts
+            EditorGUILayout.BeginHorizontal();
+            source.Cuts = EditorGUILayout.IntSlider(new GUIContent("Cuts", cutsTooltip), source.Cuts, 1, 25);
+            EditorGUILayout.EndHorizontal();
+            
+            // FillCut
+            EditorGUILayout.BeginHorizontal();
+            source.FillCut = EditorGUILayout.Toggle(new GUIContent("Fill Cut", fillCutTooltip), source.FillCut);
+            EditorGUILayout.EndHorizontal();
+            
+            // SendPreSplitMessage
+            EditorGUILayout.BeginHorizontal();
+            source.SendPreSplitMessage = EditorGUILayout.Toggle(new GUIContent("Pre Split msg", preSplitMsgTooltip), source.SendPreSplitMessage);
+            EditorGUILayout.EndHorizontal();
+            
+            // SendPostSplitMessage
+            EditorGUILayout.BeginHorizontal();
+            source.SendPostSplitMessage = EditorGUILayout.Toggle(new GUIContent("Post Split msg", postSplitMsgTooltip), source.SendPostSplitMessage);
+            EditorGUILayout.EndHorizontal();
+            
+            // InternalHullType
+            EditorGUILayout.BeginHorizontal();
+            source.InternalHullType = (HullType)EditorGUILayout.EnumPopup(new GUIContent("Internal Hull Type", internalHullTypeTooltip), source.InternalHullType);
+            EditorGUILayout.EndHorizontal();
+            
+            EditorGUILayout.EndVertical();
+            
+            // Handle change
+            if (GUI.changed)
+            {
+                EditorUtility.SetDirty(target);
+            }
+        }
+    }
+}

@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: ab4706965524198498d9a639672838a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6020816442868926355
+    second: DefaultDagger
+  - first:
+      213: -8398746048411920407
+    second: 1
+  - first:
+      213: 8184372998487824822
+    second: 2
+  - first:
+      213: -1519261263311144161
+    second: 3
+  - first:
+      213: 6652766237433180972
+    second: 4
+  - first:
+      213: 1700872872058350884
+    second: 5
+  - first:
+      213: 6039163659652376569
+    second: 6
+  - first:
+      213: 171686098609969828
+    second: 7
+  - first:
+      213: -5443195364937799877
+    second: 8
+  - first:
+      213: 9128807614565545529
+    second: 9
+  - first:
+      213: 6682757110671334213
+    second: 10
+  - first:
+      213: 7180933025490890625
+    second: 11
+  - first:
+      213: 8975007482464579654
+    second: 12
+  - first:
+      213: -5678801687160892255
+    second: 13
+  - first:
+      213: -3248208441695840689
+    second: Trans-Dagger-V1_14
+  - first:
+      213: 1765990638742695663
+    second: Trans-Dagger-V1_15
+  - first:
+      213: -6217372154401270245
+    second: Trans-Dagger-V1_16
+  - first:
+      213: -7352473755117621329
+    second: Trans-Dagger-V1_17
+  - first:
+      213: 7415979918045702113
+    second: Trans-Dagger-V1_18
+  - first:
+      213: -7745229829855350841
+    second: Trans-Dagger-V1_19
+  - first:
+      213: 6584259734068469480
+    second: Trans-Dagger-V1_20
+  - first:
+      213: 1379071863351500205
+    second: Trans-Dagger-V1_21
+  - first:
+      213: -3272731468711458542
+    second: Trans-Dagger-V1_22
+  - first:
+      213: 3348126159486271603
+    second: Trans-Dagger-V1_23
+  - first:
+      213: -2098502127540484976
+    second: Trans-Dagger-V1_24
+  - first:
+      213: 7734770579472822324
+    second: Trans-Dagger-V1_25
+  - first:
+      213: -611733947173322287
+    second: Trans-Dagger-V1_26
+  - first:
+      213: -411522647548728527
+    second: Trans-Dagger-V1_27
+  - first:
+      213: -2833711673188440093
+    second: Trans-Dagger-V1_28
+  - first:
+      213: 1133889639793767235
+    second: Trans-Dagger-V1_29
+  - first:
+      213: 8571421656219242931
+    second: Trans-Dagger-V1_30
+  - first:
+      213: 8031765356928273041
+    second: Trans-Dagger-V1_31
+  - first:
+      213: -870721769421486139
+    second: Trans-Dagger-V1_32
+  - first:
+      213: -7906492677684813855
+    second: Trans-Dagger-V1_33
+  - first:
+      213: 3798213252997031064
+    second: Trans-Dagger-V1_34
+  - first:
+      213: -3290917495969391161
+    second: Trans-Dagger-V1_35
+  - first:
+      213: -4305100768778272274
+    second: Trans-Dagger-V1_36
+  - first:
+      213: -2224607393764101824
+    second: Trans-Dagger-V1_37
+  - first:
+      213: -2129284131105670393
+    second: Trans-Dagger-V1_38
+  - first:
+      213: -3714396786094896874
+    second: Trans-Dagger-V1_39
+  - first:
+      213: 3314470727463493332
+    second: Trans-Dagger-V1_40
+  - first:
+      213: 136615729020986292
+    second: Trans-Dagger-V1_41
+  - first:
+      213: 327746337895031918
+    second: Trans-Dagger-V1_42
+  - first:
+      213: -7029639818537034794
+    second: Trans-Dagger-V1_43
+  - first:
+      213: -8341892985772731739
+    second: Trans-Dagger-V1_44
+  - first:
+      213: -8512444131185266155
+    second: Trans-Dagger-V1_45
+  - first:
+      213: 6321961888153258521
+    second: Trans-Dagger-V1_46
+  - first:
+      213: -6000949928304656621
+    second: Trans-Dagger-V1_47
+  - first:
+      213: 43989326108101142
+    second: Trans-Dagger-V1_48
+  - first:
+      213: -1875956768397503171
+    second: Trans-Dagger-V1_49
+  - first:
+      213: 2991856951000560053
+    second: Trans-Dagger-V1_50
+  - first:
+      213: 5026738622684178819
+    second: Trans-Dagger-V1_51
+  - first:
+      213: -1540602763502195238
+    second: Trans-Dagger-V1_52
+  - first:
+      213: 6415260358987050931
+    second: Trans-Dagger-V1_53
+  - first:
+      213: -974690967846556259
+    second: Trans-Dagger-V1_54
+  - first:
+      213: 6383293227788249328
+    second: Trans-Dagger-V1_55
+  - first:
+      213: -4453597358922158181
+    second: Trans-Dagger-V1_56
+  - first:
+      213: -4827905884267422538
+    second: Trans-Dagger-V1_57
+  - first:
+      213: 3488021200073376768
+    second: Trans-Dagger-V1_58
+  - first:
+      213: -5655185086857851569
+    second: Trans-Dagger-V1_59
+  - first:
+      213: -2560730381269385441
+    second: Trans-Dagger-V1_60
+  - first:
+      213: -8806067364839953350
+    second: Trans-Dagger-V1_61
+  - first:
+      213: 2362997561846519602
+    second: Trans-Dagger-V1_62
+  - first:
+      213: -6369094628891929429
+    second: Trans-Dagger-V1_63
+  - first:
+      213: -230836582684692319
+    second: Trans-Dagger-V1_64
+  - first:
+      213: 3446329956885435951
+    second: Trans-Dagger-V1_65
+  - first:
+      213: 218540677654650579
+    second: Trans-Dagger-V1_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DefaultDagger
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3978807b7ac3e8350800000000000000
+      internalID: 6020816442868926355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 268.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e711b9a7f8a17b80800000000000000
+      internalID: -8398746048411920407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 268.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b95a2421ebb49170800000000000000
+      internalID: 8184372998487824822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 268
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bf35f2eef7aeae0800000000000000
+      internalID: -1519261263311144161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 268.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23bae325af535c50800000000000000
+      internalID: 6652766237433180972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 268.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42de2239dd6ba9710800000000000000
+      internalID: 1700872872058350884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f727020a5b6fc350800000000000000
+      internalID: 6039163659652376569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 179.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa1588d893f16200800000000000000
+      internalID: 171686098609969828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 179.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3764d5a7a2e574b0800000000000000
+      internalID: -5443195364937799877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 179
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9367f01b82a00be70800000000000000
+      internalID: 9128807614565545529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 179.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bd7c57f2cedbc50800000000000000
+      internalID: 6682757110671334213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 179.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f614c5a8cc7a360800000000000000
+      internalID: 7180933025490890625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64036c0f0c1ad8c70800000000000000
+      internalID: 8975007482464579654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90.5
+        width: 90.166664
+        height: 89.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d2eef3f7d031b0800000000000000
+      internalID: -5678801687160892255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cc673c4ff49b0484b958d875a738d655
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
